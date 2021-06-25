@@ -14,3 +14,12 @@ echo "the Second number is " $b
 
 read -p "Enter the Third number :- " c
 echo "the Third number is " $c
+
+
+y=$(( $b * $c ))
+echo "the value of $b * $c is" $y
+
+z=$(( $y + $a ))
+echo "the value of $y + $a is" $z
+
+echo "the value of $a+$b*$c is " $z
