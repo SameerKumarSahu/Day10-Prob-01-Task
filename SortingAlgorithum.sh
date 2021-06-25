@@ -45,3 +45,12 @@ z=$(( $y + $c ))
 echo "the value of $y + $c is" $z
 
 echo "the value of $c+$a/$b is " $z
+
+
+y=$(( $a % $b ))
+echo "the value of $b % $c is" $y
+
+z=$(( $y + $c ))
+echo "the value of $y + $a is" $z
+
+echo "the value of $a%$b+$c is " $z
