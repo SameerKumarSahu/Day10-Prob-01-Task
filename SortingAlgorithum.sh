@@ -54,3 +54,14 @@ z=$(( $y + $c ))
 echo "the value of $y + $a is" $z
 
 echo "the value of $a%$b+$c is " $z
+
+
+
+declare -A Dict
+
+Dict[e]=$e
+Dict[g]=$g
+Dict[i]=$i
+Dict[k]=$k
+
+echo "All computes result is stored in dictionary" ${Dict[@]}
