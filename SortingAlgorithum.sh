@@ -102,7 +102,24 @@ done
 echo "${arr[@]}"
 
 
+sort=0
 
+for ((i=0; i<=3; i++))
+do
+    for((j=0; j<=3; j++))
+    do
+        if [ ${arr[i]} -lt ${arr[j]} ]
+        then
+            sort=${arr[i]}
+            arr[i]=${arr[j]}
+            arr[j]=$sort
+	else
+		continue
+        fi
+    done
+done
+
+echo "${arr[@]}"
 
 
 
